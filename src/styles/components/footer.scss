@@ -1,0 +1,105 @@
+.footer {
+  margin-top: 125px;
+  background-color: #faedeb;
+  .footer-desc {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+    h2 {
+      margin-top: 50px;
+
+      font-size: xx-large;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: bolder;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: large;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: bolder;
+      margin-bottom: 10px;
+    }
+    input {
+      border: none;
+      width: 200px;
+      padding: 10px 5px;
+      margin-right: 10px;
+    }
+    button {
+      width: 113px;
+      background-color: black;
+      color: white;
+      height: 43px;
+      border-radius: 7px;
+      border: none;
+      font-size: 18px;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: bold;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+    span {
+      color: red;
+      font-size: medium;
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: bolder;
+      margin-top: 10px;
+    }
+    .inpbtn {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .footerBottom {
+    width: 80%;
+    height: 90px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .centerSocial {
+      padding-top: 30px;
+    }
+    .footerBottomRight {
+      display: flex;
+      img {
+        width: 190px;
+        height: 40px;
+      }
+      span {
+        border: 1px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 14px;
+        cursor: pointer;
+        margin-left: 20px;
+      }
+      span:hover {
+        background-color: red;
+        border-color: red;
+        transition: 0.6s;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .footerBottomRight {
+    img {
+      display: none;
+    }
+    span {
+        border: 1px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px !important;
+        cursor: pointer;
+        margin-left: 0 !important;
+      }
+  }
+}

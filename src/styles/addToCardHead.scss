@@ -1,0 +1,119 @@
+.addCardHead {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  .addCardHeadBtn {
+    position: absolute;
+    padding: 10px 10px;
+    top: 10;
+    right: 0;
+    cursor: pointer;
+  }
+  .addLeft {
+    width: 50%;
+    opacity: 0.5;
+    background-color: black;
+    cursor: pointer;
+  }
+  .addRight {
+    width: 50%;
+    overflow: auto;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+}
+.ShoppingCart {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.totalhr {
+  margin-top: 20px;
+}
+.otherPrice {
+  color: #a28c8c;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.otherPrice1 {
+  font-size: 14px;
+  color: #a28c8c;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.totalPrice {
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+.checkOut {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  span {
+    text-align: center;
+    width: 150px;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+}
+.checkOut {
+  span:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    border: 1px solid black;
+  }
+}
+@media (max-width: 800px) {
+  .addCardHead {
+    .addLeft {
+      width: 30%;
+    }
+    .addRight {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .addCardHead {
+    .addLeft {
+      width: 20%;
+    }
+    .addRight {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 459px) {
+  .addCardHead {
+    .addLeft {
+      width: 10%;
+    }
+    .addRight {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .addCardHead {
+    .addLeft {
+      width: 0%;
+    }
+    .addRight {
+      width: 100%;
+    }
+  }
+}
